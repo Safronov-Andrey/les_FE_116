@@ -1,0 +1,16 @@
+.main_f {
+    width: 150px;
+    height: auto;
+}
+table {
+    border: 1px solid grey;
+    align-items: center;
+}
+tr {
+    width: 20px;
+    height: auto;
+}
+.logo {
+    width: 20px;
+    height: auto;
+}
