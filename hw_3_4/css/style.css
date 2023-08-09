@@ -1,0 +1,194 @@
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid #828282;
+  background-color: white;
+}
+header nav {
+  width: 496px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul li a {
+  color: #828282;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-decoration: unset;
+}
+header nav ul li a:hover {
+  color: #070707;
+}
+.screen h1 {
+  color: #070707;
+  font-family: Open Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 12px 0 50px;
+}
+.screens {
+  width: 970px;
+  height: 387px;
+}
+.about {
+  padding: 100px auto;
+}
+.about h2, .skills h2, .portfolio h2, .contact h2 {
+  color: #070707;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about h2 {
+  margin: 100px 0 50px;
+}
+.about div {
+  display: flex;
+  width: 480px;
+  height: 210px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto 100px;
+}
+.about p, .skills p, .portfolio p a, .contact p {
+  color: #070707;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.skills h2{
+  margin: 100px 0 20px;
+}
+.skills .items {
+  display: flex;
+  max-width: 970px;
+  height: 230px;
+  justify-content: center;
+  align-items: center;
+  gap: 97px;
+  margin: 50px 0 100px;
+}
+.skills .items .item {
+  display: flex;
+  width: 170px;
+  height: 230px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.skills .items .item .figma {
+  gap: 80px;
+}
+.skills .items .item .product {
+  display: flex;
+  width: 80px;
+  height: 143px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.skills .items .item .product span {
+  color: #828282;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.skills .items .item .star img {
+  width: 26px;
+  height: 26px;
+}
+.skills .items .item .star {
+  display: flex;
+  width: 170px;
+  height: 26px;
+  align-items: flex-start;
+  gap: 10px;
+}
+#portfolio {
+  margin: 100px 0 50px;
+}
+.screen-p {
+  width: 970px;
+  height: 540px;
+}
+.portfolio {
+  padding-bottom: 30px;
+}
+.portfolio p {
+  text-align: center;
+  margin: 40px 0 70px;
+}
+.contact {
+  padding: 100px 0;
+  text-align: center;
+}
+#contact p {
+  margin-top: 20px;
+}
+.contact .mesg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 60px auto;
+}
+.mesg button {
+  width: 180px;
+  height: 44px;
+  padding: 0px 16px;
+  border-radius: 22px;
+  background: #070707;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.mesg div {
+  display: flex;
+  align-content: center;
+  gap: 50px;
+}
+.mesg div img {
+  width: 40px;
+  height: 40px;
+}
+.contact span {
+  color: #828282;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
