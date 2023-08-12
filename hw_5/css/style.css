@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+header {
+  display: flex;
+  width: 793px;
+  height: 82px;
+  background-color: #4A4F56;
+  margin: 0 auto;
+}
+h1 {
+  color: #FF8984;
+  font-family: Trebuchet;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+p {
+  color: #FF8984;
+  font-family: Trebuchet;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
