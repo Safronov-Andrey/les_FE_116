@@ -8,26 +8,40 @@
   <title>Shopping list</title>
 </head>
 <body>
-  <header>
-    <h1>CSS Dinner Shopping List</h1>
-    <p>Let’s go to the mall!</p>
-  </header>
   <main>
-    <form class="checklist">
-      <input type="checkbox" name="one" id="">
-      <label for="one">A lot of pickles<span>for the next lessons about CSS</span></label>
-      <input type="checkbox" name="two" id="">
-      <label for="two">10 apples<span>for more CSS manipulations</span></label>
-      <input type="checkbox" name="three" id="">
-      <label for="three">20 oranges<span>because they are awesome</span></label>
-      <input type="checkbox" name="four" id="">
-      <label for="four">13 plates<span>hm... they always dissapear</span></label>
-      <input type="checkbox" name="five" id="">
-      <label for="five">15 bentos</label>
-      <input type="checkbox" name="six" id="">
-      <label for="six">1 bottle of Sake<span>for my friends</span></label>
+    <header>
+      <h1>CSS Dinner Shopping List</h1>
+      <h3>Let’s go to the mall!</h3>
+    </header>
+    <div class="checklist">
+      <ul>
+        <li class="light">
+          <input type="checkbox" name="first" id="first">
+          <label for="first">A lot of pickles&nbsp;<span>for the next lessons about CSS</span></label>
+        </li>
+        <li class="dark">
+          <input type="checkbox" name="second" id="second">
+          <label for="second">10 appes&nbsp;<span>for more CSS manipulations</span></label>
+        </li>
+        <li class="light">
+          <input type="checkbox" name="third" id="third">
+          <label for="third">20 oranges&nbsp;<span>because they are awesome</span></label>
+        </li>
+        <li class="dark">
+          <input type="checkbox" name="fourth" id="fourth">
+          <label for="fourth">13 plates&nbsp;<span>hm... they always dissapear</span></label>
+        </li>
+        <li class="light">
+          <input type="checkbox" name="fifth" id="fifth">
+          <label for="fifth">15 bentos</label>
+        </li>
+        <li class="dark">
+          <input type="checkbox" name="sixth" id="sixth">
+          <label for="sixth">1 bottle of Sake&nbsp;<span>for my friends</span></label>
+        </li>
+      </ul>
       <button>Bon appetit :</button>
-    </form>
+    </div>  
   </main>
 </body>
 </html>
