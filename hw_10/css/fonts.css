@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Farro';
+  font-weight: 300;
+  src: url(../fonts/Farro-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Tourney';
+  font-weight: 600;
+  src: url(../fonts/Tourney-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  src: url(../fonts/PTSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/PTSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  src: url(../fonts/PTSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  src: url(../fonts/Staatliches-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Francois One';
+  font-weight: 400;
+  src: url(../fonts/FrancoisOne-Regular.ttf) format('truetype');
+}
