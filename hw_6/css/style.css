@@ -1,0 +1,44 @@
+.registration {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  background-color: rgb(209, 208, 208);
+}
+.registration label {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.registration label span {
+  width: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-style:inherit;
+}
+.registration label:nth-child(6) input {
+  width: 50px;
+}
+.registration label:last-of-type span {
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12px;
+  font-style: initial;
+} 
+.registration label .adress {
+  width: 200px;
+  height: 90px;
+}
+.registration label .radio_box {
+  width: 200px;
+  display: flex;
+}
+.registration div button {
+  margin: 0 15px;
+  border-radius: 7px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-style: initial;
+}

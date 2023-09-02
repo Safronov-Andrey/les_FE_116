@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2? family= Delius+Unicase:wght@400;700 & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700; 0,900;1,100;1,300;1,400;1,500;1,700;1,900 & display=swap');
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+h2 {
+  margin: 120px auto 80px;
+  color: #000;
+  text-align: center;
+  font-family: Delius Unicase;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.architectural .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 370px 370px 370px;
+  gap: 30px;
+  grid-template-areas: "item1-1 item1-2 item1-2"
+                       "item1-3 item1-3 item1-4"
+                       "item1-5 item1-6 item1-6";
+}
+.still_life .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 370px 770px 370px;
+  gap: 30px;
+  grid-template-areas: "item2-1 item2-2 item2-2"
+                       "item2-3 item2-3 item2-4"
+                       "item2-5 item2-5 item2-6";
+}
+.portrait .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 370px 370px 370px 370px 370px;
+  gap: 30px;
+  grid-template-areas: "item3-1 item3-2 item3-3"
+                       "item3-4 item3-2 item3-5"
+                       "item3-6 item3-7 item3-5"
+                       "item3-6 item3-8 item3-8"
+                       "item3-9 item3-9 item3-10";
+}
+.items .item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.item .author {
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%);
+}
+.item .author .footer {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.item .author .like {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.item .author .footer, .item .author .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.item .author .header {
+  color: white;
+  opacity: 0;
+}
+.item:hover .author {
+  background: unset;
+}
+.item:hover .header {
+  opacity: 1;
+}
+/* icon liked*/
+.header input {
+  display: none;
+}
+.header label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+label ion-icon {
+  color: #4F4F4F;
+  font-size: 1.5rem;
+  animation: scale(0.75) 0.5s ease 0;
+}
+input:checked + ion-icon {
+  color: #FF0000;
+  animation: scale(1.25) 0.5s ease 0;
+}
+button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: medium none;
+  background-color: rgba(254, 253, 253, 0.5);
+}
+/* architectural image */
+.architectural .item:nth-child(1) {
+ grid-area: item1-1; 
+}
+.architectural .item:nth-child(2) {
+  grid-area: item1-2; 
+}
+ .architectural .item:nth-child(3) {
+  grid-area: item1-3; 
+}
+.architectural .item:nth-child(4) {
+  grid-area: item1-4; 
+}
+.architectural .item:nth-child(5) {
+  grid-area: item1-5; 
+}
+.architectural .item:nth-child(6) {
+  grid-area: item1-6; 
+}
+/* still life image*/
+.still_life .item:nth-child(1) {
+  grid-area: item2-1;
+}
+.still_life .item:nth-child(2) {
+  grid-area: item2-2;
+}
+.still_life .item:nth-child(3) {
+  grid-area: item2-3;
+}
+.still_life .item:nth-child(4) {
+  grid-area: item2-4;
+}
+.still_life .item:nth-child(5) {
+  grid-area: item2-5;
+}
+.still_life .item:nth-child(6) {
+  grid-area: item2-6;
+}
+/*portrait image*/
+.portrait .item:nth-child(1) {
+  grid-area: item3-1;
+}
+.portrait .item:nth-child(2) {
+  grid-area: item3-2;
+}
+.portrait .item:nth-child(3) {
+  grid-area: item3-3;
+}
+.portrait .item:nth-child(4) {
+  grid-area: item3-4;
+}
+.portrait .item:nth-child(5) {
+  grid-area: item3-5;
+}
+.portrait .item:nth-child(6) {
+  grid-area: item3-6;
+}
+.portrait .item:nth-child(7) {
+  grid-area: item3-7;
+}
+.portrait .item:nth-child(8) {
+  grid-area: item3-8;
+}
+.portrait .item:nth-child(9) {
+  grid-area: item3-9;
+}
+.portrait .item:nth-child(10) {
+  grid-area: item3-10;
+}
