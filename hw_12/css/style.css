@@ -1,0 +1,204 @@
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 120px auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .title h3 {
+  color: #898F8F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.main .title h1 {
+  color: #FC0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 66px;
+  text-transform: uppercase;
+  margin: 15px auto 40px;
+}
+.main .title hr {
+  background: url("../img/bonfire-sharp.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 20px;
+  width: 450px;
+  border: 0;
+  position: relative;
+}
+.main .title hr:before,
+.main .title hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #FC0;
+  height: 1px;
+  top: 8px;
+}
+.main .title hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 15px;
+}
+.main .title hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 15px;
+}
+.main .info {
+  height: 757px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 85px;
+}
+.main .info .foto {
+  width: 432px;
+  height: 432px;
+}
+.main .info .foto .frames {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main .info .foto .frames img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.main .info .foto .frames .frame {
+  width: 100px;
+  height: 100px;
+}
+.main .info .foto .frames .frame:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #FC0;
+  border-left: 2px solid #FC0;
+}
+.main .info .foto .frames .frame:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2px solid #FC0;
+  border-right: 2px solid #FC0;
+}
+.main .info .foto .frames .frame:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #FC0;
+  border-right: 2px solid #FC0;
+}
+.main .info .foto .frames .frame:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #FC0;
+  border-left: 2px solid #FC0;
+}
+.main .info hr {
+  display: flex;
+  align-self: normal;
+  border: 1px solid #FC0;
+  background: #FC0;
+}
+.main .info .content {
+  max-width: 430px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .info .content h2 {
+  color: #666;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.main .info .content hr {
+  width: 100px;
+  border: 1px solid #FC0;
+  margin: 30px auto;
+}
+.main .info .content h3 {
+  color: #666;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+.main .info .content .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 30px auto 49px;
+}
+.main .info .content p {
+  color: #333;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.main .info .content .dotted_line hr {
+  display: inline-block;
+  height: 4px;
+  background: #FC0;
+}
+.main .info .content .dotted_line hr:nth-child(1), .main .info .content .dotted_line hr:nth-child(3) {
+  width: 10px;
+}
+.main .info .content .dotted_line hr:nth-child(2) {
+  width: 20px;
+}
+.main .info .content button {
+  display: inline-flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FC0;
+  background: unset;
+  color: #666;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}
