@@ -62,6 +62,9 @@ header .wrapper img {
 }
 main {
   margin-top: 150px;
+  background-image: url(../img/bg-picture.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 main .main-wrapper {
   display: flex;
