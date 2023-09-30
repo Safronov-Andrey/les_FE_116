@@ -1,0 +1,287 @@
+body {
+  background-color: #F7F7F7;
+}
+.forms {
+  max-width: 1170px;
+  width: 100%;
+  margin: 55px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.forms .create, .forms .profile {
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 34px 16px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+.forms .double {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.forms label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 245px;
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+.forms label input {
+  display: flex;
+  padding: 7px 10px;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #545454;
+}
+.forms label input:focus {
+  border: 1px solid #007BFF;
+}
+.forms .create h2, .forms .profile h2 {
+  color: #1C1C1C;
+  align-items: start;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.forms .create .email label {
+  width: 100%;
+}
+.forms .create .email input {
+  width: 100%;
+}
+.forms .create .email h5 {
+  color: #969696;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  margin-top: 7px;
+}
+.forms .create .gender {
+  display: flex;
+  align-items: left;
+  gap: 20px;
+}
+.forms .create .gender label {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: relative;
+}
+.forms .create .gender label input {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+.forms .create .gender label .radio_new {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #545454;
+  position: absolute;
+  left: 0;
+}
+.forms .create .gender label input:checked + .radio_new {
+  border: 6px solid #007BFF;
+}
+.forms .double .select_wrapper {
+  display: flex;
+  align-items: center;
+  width: 245px;
+  position: relative;
+}
+.forms .double .select_wrapper select {
+  appearance: none;
+  width: 100%;
+  height: 38px;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  color: #545454;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+.forms .double .select_wrapper select:focus {
+  border:1px solid #007BFF;
+}
+.forms .double .select_wrapper img {
+  position: absolute;
+  right: 10px;
+}
+.forms .create button {
+  width: 100%;
+  height: 38px;
+  background-color: #007BFF;
+  border-radius: 5px;
+  border: unset;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px
+}
+.forms .create p {
+  max-width: 390px;
+  width: 100%;
+  color: #969696;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  margin: 0 auto;
+}
+.forms .create p a {
+  color: #007BFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  text-decoration: none;
+}
+.forms .create hr {
+  width: 100%;
+  border: 1px solid #E4E4E4;
+}
+.forms .create .log_in {
+  max-width: 177px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+.forms .create .log_in p {
+  max-width: 116px;
+  width: 100%;
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+.forms .create .log_in a {
+  color: #007BFF;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+}
+.forms .profile .foto_data {
+  display: grid;
+  grid-template-columns: 80px 138px 30px;
+  grid-template-rows: 40px 40px;
+  grid-template-areas: "foto file button"
+                       "foto text text";
+  row-gap: 9px;
+  column-gap: 15px;
+  align-items: center;
+}
+.forms .profile .foto_data img {
+  grid-area: foto;
+}
+.forms .profile .foto_data .download {
+  width: 138px;
+  height: 30px;
+  align-self: end;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  grid-area: file;
+}
+.forms .profile .foto_data .download img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-right: 10px;
+}
+.forms .profile .foto_data .download label {
+  width: 100%;
+  height: 30px;
+}
+.forms .profile .foto_data .download label input {
+  visibility: hidden;
+}
+.forms .profile .foto_data button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: end;
+  border:1px solid #545454;
+  border-radius: 5px;
+  grid-area: button;
+}
+.forms .profile .foto_data p {
+  grid-area: text;
+  align-self: baseline;
+  color: #969696;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+.forms .profile .zip_code label input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.forms .profile .send {
+  width: 150px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007BFF;
+  border:1px solid #007BFF;
+  border-radius: 5px;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+}

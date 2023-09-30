@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Create Account</title>
+</head>
+<body>
+  <main class="forms">
+    <form action="get" class="create" name="create">
+      <h2>Create an Account</h2>
+      <div class="double">
+        <label>
+          First Name
+          <input type="text" name="first_name" required>
+        </label>
+        <label>
+          Last Name
+          <input type="text" name="last_name" required> 
+        </label>
+      </div>
+      <div class="email">
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <h5>We'll never share your email with anyone else.</h5>
+      </div>
+      <div class="gender">
+        <label>
+          <input type="radio" name="gender" value="male">
+          <div class="radio_new"></div>
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female">
+          <div class="radio_new"></div>
+          Female
+        </label>
+      </div>
+      <div class="double">
+        <label>
+          Country
+          <div class="select_wrapper">
+            <select name="country">
+              <option value disabled selected>Select</option>
+            </select>
+            <img src="img/double_arrow.svg" alt="double arrow">
+          </div>
+        </label>
+        <label>
+          City
+          <input type="text" name="city" required> 
+        </label>
+      </div>
+      <button type="submit">Sign Up</button>
+      <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+      <hr>
+      <div class="log_in">
+        <p>Have an account?</p>
+        <a href="#">Log In</a>
+      </div>
+    </form>
+    <form action="get" class="profile" name="profile">
+      <h2>Profile</h2>
+      <div class="foto_data">
+        <img src="img/foto.png" alt="your foto">
+        <div class="download">
+          <label>
+            <input type="file" name="image-file" accept="image/*">
+          </label>
+          <img src="img/camera.svg" alt="">
+        </div>
+        <button type="reset"><img src="img/trash.svg" alt=""></button>
+        <p>Up to 1 MB (300x300 px)</p>
+      </div>
+      <div class="double">
+        <label>
+          Name
+          <input type="text" name="Name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="Email" required>
+        </label>
+      </div>
+      <div class="double">
+        <label>
+          Country
+          <div class="select_wrapper">
+            <select name="country">
+              <option value disabled selected>Select</option>
+            </select>
+            <img src="img/double_arrow.svg" alt="">
+          </div>
+        </label>
+        <label>
+          City
+          <input type="text" name="city" required> 
+        </label>
+      </div>
+      <div class="double zip_code">
+        <label>
+          Zip Code
+          <input type="number" name="zip_code" min="0" oninput="validity.valid||(value='');">
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" name="phone" required>
+        </label>
+      </div>
+      <button class="send" type="submit">Update</button>
+    </form>
+  </main>
+</body>
+</html>
